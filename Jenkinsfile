@@ -57,7 +57,9 @@ pipeline {
 
             stage('Deploy to itch.io') {
                         steps {
-                            sh 'butler push dist/your-app.zip Natty50/Hospital Management System:windows --userversion 1.0.0'
+                             withCredentials([string(credentialsId: 'itch.io', variable: 'BUTLER_API_KEY')]) {
+                                                // Deploy the ZIP file to itch.io using Butler
+                                                sh 'butler push dist/HospitalManagmentSystem.zip $ITCH_USER/$ITCH_GAME:windows --userversion 1.0.0 --apikey $BUTLER_API_KEY'
                         }
 
         }
