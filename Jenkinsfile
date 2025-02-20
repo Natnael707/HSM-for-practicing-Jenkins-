@@ -12,7 +12,7 @@ pipeline {
      stages {
         stage('Checkout') { // Fetches source code from GitHub
             steps {
-                git branch: 'main', url: 'https://github.com/ShonLibo/HospitalManagmentSystem.git'
+                git branch: 'main', url: 'https://github.com/Natnael707/HSM-for-practicing-Jenkins-.git'
             }
         }
 
