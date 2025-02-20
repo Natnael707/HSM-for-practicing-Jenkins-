@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         ITCH_USER = 'Natty50'             // Your itch.io username
-        ITCH_GAME = 'Hospital Management System' // The game name on itch.io
+        ITCH_GAME = 'HMS' // The game name on itch.io
     }
 
     stages {
