@@ -33,10 +33,10 @@
     <modules>
 
 
-        <module>Hospital.app.ui</module>
         <module>Hospital.data</module>
         <module>Hospital.ui</module>
         <module>Hospital.utils</module>
+        <module>Hospital.app</module>
     </modules>
 
     <properties>
