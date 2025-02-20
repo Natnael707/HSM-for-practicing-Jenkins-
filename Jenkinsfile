@@ -57,7 +57,7 @@ pipeline {
 
             stage('Deploy to itch.io') {
                         steps {
-                            sh 'butler push dist/your-app.zip your-itchio-Natty50/Hospital Management System:windows --userversion 1.0.0'
+                            sh 'butler push dist/your-app.zip Natty50/Hospital Management System:windows --userversion 1.0.0'
                         }
 
         }
