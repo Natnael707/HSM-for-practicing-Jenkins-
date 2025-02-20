@@ -59,7 +59,7 @@ pipeline {
                         steps {
                              withCredentials([string(credentialsId: 'itch.io', variable: 'BUTLER_API_KEY')]) {
                                                 // Deploy the ZIP file to itch.io using Butler
-                                                sh 'butler push dist/HospitalManagmentSystem.zip $ITCH_USER/$ITCH_GAME:windows --userversion 1.0.0 --apikey $BUTLER_API_KEY'
+                                                sh 'butler push dist/Hospital Management System.zip $ITCH_USER/$ITCH_GAME:windows --user version 1.0.0 --apikey $BUTLER_API_KEY'
                         }
 
         }
