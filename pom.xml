@@ -50,15 +50,16 @@
 
     <build>
 
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.9.1.2184</version> <!-- Use the latest version -->
+                </plugin>
+            </plugins>
 
-        <plugins>
 
 
-
-
-
-
-        </plugins>
     </build>
 
     <repositories>
@@ -66,6 +67,13 @@
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
+
+
+            <repository>
+                <id>sonar source</id>
+                <url>https://repo.sonarsource.org/public</url>
+            </repository>
+
 
     </repositories>
 
