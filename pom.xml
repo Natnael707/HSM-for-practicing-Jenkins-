@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -45,7 +47,14 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
+        <sonar.host.url>http://localhost:9000</sonar.host.url> <!-- SonarQube server URL -->
+        <sonar.login>your-sonarqube-token</sonar.login> <!-- SonarQube token -->
+        <sonar.java.binaries>target/classes</sonar.java.binaries> <!-- Path to compiled classes -->
+
     </properties>
+
 
 
     <build>
@@ -76,6 +85,8 @@
 
 
     </repositories>
+
+
 
 
 
