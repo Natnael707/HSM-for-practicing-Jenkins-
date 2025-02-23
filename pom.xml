@@ -19,14 +19,14 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- JUnit 5 Engine to run tests
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>[5.10.0,)</version>
             <scope>test</scope>
         </dependency>
-        -->
+
 
 
     </dependencies>
@@ -64,11 +64,28 @@
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>3.9.1.2184</version> <!-- Use the latest version -->
+
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>3.5.2</version> <!-- Use a suitable version -->
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
 
 
 
+
+<!-- d -->
     </build>
 
     <repositories>
@@ -85,7 +102,6 @@
 
 
     </repositories>
-
 
 
 
